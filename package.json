@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "echo 'Hello World!'",
+    "start": "serve",
+    "build": "esbuild index.js --bundle --outfile=dist/out.js"
   },
   "browserslist": {
     "production": [
@@ -29,5 +31,10 @@
     "url": "https://github.com/learn-co-curriculum/react-hooks-npm-lab/issues"
   },
   "homepage": "https://github.com/learn-co-curriculum/react-hooks-npm-lab#readme",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "esbuild": "^0.18.14",
+    "serve": "^14.2.0"
+  }
 }
